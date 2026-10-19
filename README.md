@@ -1,41 +1,70 @@
 # 贾维斯视频助手 0.7.2
 
-## 下载插件（普通用户只选这个）
+在 Edge / Chrome 中识别和下载网页视频，自动选择最高画质、保留原音。媒体处理在浏览器内完成，无需另装后台程序。
 
-**[点击下载：Edge / Chrome 通用拖拽安装包](https://github.com/mchen0571/jarvis-video-assistant/releases/download/v0.7.2/jarvis-video-assistant-0.7.2-drag-install.zip)**
+## 下载
 
-无需手动解压，不上架商店，不修改系统策略，继续按开源许可分发。
+**[下载插件安装包（Edge / Chrome 通用）](https://github.com/mchen0571/jarvis-video-assistant/releases/download/v0.7.2/jarvis-video-assistant-0.7.2-drag-install.zip)**
 
-### Edge 安装
-1. 打开 `edge://extensions`，开启“开发人员模式”。
-2. 从电脑的文件资源管理器拖动下载的 ZIP，移到页面上部 **“已安装的扩展”标题所在内容行**，不要放到页面底部的大块空白处。
-3. 按住鼠标，看到 **“拖放以安装”** 后再松手。没有提示就先按 Esc 取消，不要直接松手。
-4. 扩展卡片显示“贾维斯视频助手 0.7.2”并开启后，打开含视频的网页，点击扩展图标使用。
+普通使用只需下载这一个 ZIP，**不用手动解压，也不用下载源码包**。
 
-**Edge 落点提示很重要：** 本机 Edge 155 在页底空白处会把 ZIP 当成文件下载；改到上部标题内容行后，已验证安装、真实扩展弹窗和完整退出重启后仍启用。重启若提示关闭开发人员模式，请选择保留该模式，继续使用开发者加载的扩展。
+## 安装
 
-### Chrome 安装
-打开 `chrome://extensions`，开启“开发者模式”，把 ZIP 从文件管理器拖进扩展管理页，看到“拖放以安装”后松手。已在 Chrome 155 验证安装、真实扩展弹窗及退出重启后仍启用。
+### Microsoft Edge
+1. 在地址栏打开 `edge://extensions`，开启“开发人员模式”。
+2. 从电脑的文件管理器，把下载的 ZIP 拖到页面上部 **“已安装的扩展”标题附近的内容区域**。
+3. 看到 **“拖放以安装”** 后松开鼠标，等待扩展出现并保持开启。
 
-### 版本和附件说明
-- 普通用户下载上面的 **`jarvis-video-assistant-0.7.2-drag-install.zip`** 即可，不要同时启用两份视频助手。
-- `jarvis-video-assistant-0.7.2-source.zip` 是开源许可配套源码和构建材料，**不是安装包，普通使用无需下载**。
-- `jarvis-video-assistant-0.7.2.zip` 为早期解压加载包；`jarvis-video-assistant-0.7.2-chrome-drag.zip` 为早期命名的拖装包，与上方通用拖装包字节相同，仅为兼容旧链接保留。
-- GitHub 自动生成的 `Source code (zip)` / `Source code (tar.gz)` 是仓库快照，不是插件安装包。
+**不要拖到页面底部的大块空白处。** 如果没有出现安装提示，按 Esc 取消，再移到上部内容区域操作。
 
-本次只调整打包层级和说明，257 个运行文件与原版 0.7.2 逐字节一致。安装验证不等于重新测试所有网站下载功能；存在 webRequest 的 host permissions 运行警告，未修改权限来消除此警告。包内保留候选阶段说明，当前安装验收结果以本页为准。
+### Google Chrome
+1. 在地址栏打开 `chrome://extensions`，开启“开发者模式”。
+2. 从文件管理器把 ZIP 拖进扩展管理页面，看到 **“拖放以安装”** 后松开鼠标。
 
-备用安装：解压通用拖装包到长期目录，通过“加载解压缩的扩展”选择直接含 `manifest.json` 的根文件夹。早期常规包则选择其中的 `extension` 子目录。
+安装后请保持开发者模式开启。若浏览器询问是否关闭该模式，选择保留。
 
-## 功能边界
-保留0.7.2交付版本的运行文件和处理流程。网站结构、访问权限和媒体编码变化可能导致识别或下载失败；不保证所有网站可用。知乎静态封面预览针对已验证播放器结构，不会自动播放或改变网页进度。请仅保存你有权下载和使用的内容。
+## 使用
+
+打开目标视频网页，必要时先播放视频，再点击浏览器工具栏中的“贾维斯视频助手”。按提示授予所需网站访问权限，找到对应视频后点击下载。
+
+可在浏览器的扩展菜单中将它固定到工具栏。请勿同时启用多份视频助手。
+
+## 使用范围
+
+- 已在 Windows 的 Edge 155 和 Chrome 155 验证 ZIP 拖拽安装、打开扩展以及重启后保持启用。
+- 网站结构、访问权限和媒体编码变化可能影响识别或下载，不保证所有网站可用。
+- 请仅下载你有权保存和使用的内容。
+- GitHub 分发不提供扩展商店式自动更新。
+
+<details>
+<summary>备用安装方式与其他附件</summary>
+
+如果无法拖拽安装，可将通用安装包完整解压到长期保留的文件夹，在扩展管理页点击“加载解压缩的扩展”，选择直接包含 `manifest.json` 的根文件夹。安装后不要移动或删除该目录。
+
+发布页下方其他文件的用途：
+- `jarvis-video-assistant-0.7.2-source.zip`：配套源码与构建材料，不是安装包。
+- `SHA256SUMS.txt`：文件完整性校验值，普通使用可不下载。
+- `jarvis-video-assistant-0.7.2-chrome-drag.zip`：旧命名安装包，与通用拖装包内容相同，为兼容旧下载链接保留。
+- `jarvis-video-assistant-0.7.2.zip`：旧版打包结构，解压安装时选择其中的 `extension` 子文件夹。
+- GitHub 自动生成的 `Source code (zip)` / `Source code (tar.gz)`：仓库快照，不是插件安装包。
+
+</details>
+
+<details>
+<summary>已知问题</summary>
+
+扩展管理页可能记录一条关于 `webRequest` 缺少网站权限的警告。该警告未阻止已验证的安装、启用和弹窗打开；网站下载行为仍受实际授权及网站兼容性影响。当前版本保留该问题，未额外扩大网站权限。
+
+安装包内部分说明仍保留早期候选阶段文字，最新安装方法以本页为准。
+
+</details>
 
 ## 隐私与权限
-扩展包含 activeTab、scripting、storage、downloads、webRequest 权限，网站访问权限按需申请。运行中会在浏览器本地保存任务和媒体缓存，访问媒体网站时该网站仍会接收正常网络请求。无本项目服务端不等于不会访问互联网。
 
-公开材料不包含开发者个人浏览记录、私人截图、账号凭据或内部测试数据。
+扩展使用 `activeTab`、`scripting`、`storage`、`downloads`、`webRequest` 权限，网站访问权限按需申请。任务与媒体缓存保存在浏览器本地；下载时仍需访问媒体所属网站，该网站会接收正常网络请求。扩展不需要本项目服务端。
 
-## 许可与源码
-原创代码采用 GPL-3.0-or-later。源码形式的 JavaScript、HTML、CSS 和清单随 extension 目录提供，无需编译即可加载。第三方源码与构建材料须与插件包一起提供明确的获取方式；具体版本与许可见 THIRD_PARTY_NOTICES.md。
+## 开源许可与源码
 
-插件包与配对源码包应在同一版本发布页免费提供。源码见 jarvis-video-assistant-0.7.2-source.zip。
+原创代码采用 **GPL-3.0-or-later**，第三方组件保留各自许可，详见 `THIRD_PARTY_NOTICES.md`。JavaScript、HTML、CSS 和清单随通用安装包根目录提供。
+
+**[获取配套源码与构建材料](https://github.com/mchen0571/jarvis-video-assistant/releases/download/v0.7.2/jarvis-video-assistant-0.7.2-source.zip)**。普通使用无需下载；如需研究、修改或再分发，请同时阅读相关许可及源码材料。
