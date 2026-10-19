@@ -1,5 +1,16 @@
 # 贾维斯视频助手 0.7.2
 
+## 下载插件（普通用户选这个）
+
+**[点击下载：贾维斯视频助手 0.7.2 插件包](https://github.com/mchen0571/jarvis-video-assistant/releases/download/v0.7.2/jarvis-video-assistant-0.7.2.zip)**
+
+普通用户只需下载 `jarvis-video-assistant-0.7.2.zip`。
+
+- `jarvis-video-assistant-0.7.2-source.zip`：开源许可配套源码与构建材料，**不是安装包，普通使用无需下载**。
+- GitHub 自动生成的 `Source code (zip)` / `Source code (tar.gz)`：仓库快照，**也不是插件安装包**。
+
+下载插件包后解压，加载其中的 `extension` 文件夹；不要把整个发布包当作扩展目录。
+
 运行于 Edge / Chrome 的 Manifest V3 视频下载扩展。无需本项目服务端，也无需另装本机后台程序。识别、下载和媒体处理在浏览器内进行；下载仍需访问视频所属网站。
 
 ## 安装
