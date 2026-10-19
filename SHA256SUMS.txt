@@ -1,0 +1,2 @@
+bab32f673e65d8639942497f66a19384d409e39a9ec1a7f8d9de0dc26b1a89b0  jarvis-video-assistant-0.7.2-source.zip
+bce96de46e0a03159d8efbeeb65dba2c0ba212f6585adaa492eb2ac0b13ecab8  jarvis-video-assistant-0.7.2.zip
